@@ -13,7 +13,7 @@ var kangjia96 = function(){
     for (let n of ary) {
       if (n) {
         result.push(n)
-      }
+      }      
     }
     return result
   }
