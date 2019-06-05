@@ -1,7 +1,7 @@
 ## Lodash
   ___
-  ### 为了加强对js基础的掌握，自己试着实现loash库的部分函数，
-  大约实现了250个函数，约占Lodash库的90%左右
+  ### 为了加强对js基础的掌握，自己试着实现lodash库的部分函数，
+  大约实现了250个函数，约占lodash库的90%左右
 
   由于函数的测试用例较少，实现过程简易，考虑的不是很全面，很多函数的实现可能存在一些问题，还有待自己下一步的修改和完善。
   ___
@@ -58,7 +58,7 @@
     }
   ```
 
-***isEqual***
+***isEqual深度对比***
   - isEqual
   ```js
 
@@ -99,7 +99,8 @@
    //对象是对象  函数是对象 数组是对象
    isObject = value => Object.prototype.toString.call(value) === "[object Object]" || Object.prototype.toString.call(value) === "[object Function]" || Object.prototype.toString.call(value) === "[object Array]"
   ```
-***debounce/thorttle***
+
+***debounce/thorttle 防抖/降频***
   - debounce
   ```js
     debounce = (func, delay) => {
