@@ -79,6 +79,9 @@
     if (isArray(value) && !isArray(other)) { //数据和对象
       return false
     }
+    if (isArray(other) && !isArray(value)) { //数据和对象
+      return false
+    }
     if (isObject(value) && isObject(other)) { //判断对象和数组深层次嵌套
     //进行两次循环 防止对象前面参数相同 但长度不一
       for (let key in value) {
