@@ -34,12 +34,16 @@
         for (let key in obj) {
           let val = obj[key]
           if (typeof val === 'object') {
+            // 如果还是对象进行递归
             res[key] = cloneDeep(val)
-          }
+          } else {
             res[key] = val
+          }
         }
+        return res
       }
-    })
+
+    }())
   ```
 
 ***curry函数柯里化***
