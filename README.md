@@ -76,10 +76,10 @@
     if (typeof value !== typeof other) { //类型不同
       return false
     }
-    if (isArray(value) && !isArray(other)) { //数据和对象
+    if (isArray(value) && !isArray(other)) { //数组和与非数组
       return false
     }
-    if (isArray(other) && !isArray(value)) { //数据和对象
+    if (isArray(other) && !isArray(value)) { //数组和与非数组
       return false
     }
     if (isObject(value) && isObject(other)) { //判断对象和数组深层次嵌套
